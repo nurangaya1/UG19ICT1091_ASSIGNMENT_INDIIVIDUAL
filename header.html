@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="header.css">
+		
+	<body>
+        <h1>ZAYYAD ACADEMY KANO</h1>
+        <p> <b>Address</b> No. 125 Dangwalalo Quarters, Opposite Federal College of Education, Kano </p>
+        <p> <b>Email Address</b> zayyadacademykano@gmail.com</p>
+        <p> <b>GSM Number</b> 08011111111 - 08022222222 - 08033333333</p><br>
+
+			<form style="float:right;display:inline-block;line-height:52px;padding-right:14px; color: white"> Search:
+				<input type="text" name="searchbar" size="15">
+			</form>
+		
+
+<div class="dropdown">
+  <button class="dropbtn">Home</button>
+  	<a href="header.html"></a>
+  </div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Programmes</button>
+  <div class="dropdown-content">
+  <a href="#">Islamiyya Section</a>
+  <a href="#">Nursery Section</a>
+  <a href="#">Primary Section</a>
+  <a href="#">Secondary Section</a>
+  <a href="#">Extra Lesson / Special Classes</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Admission</button>
+  <div class="dropdown-content">
+  <a href="admission.html">Islamiyya Section</a>
+  <a href="admission.html">Nursery Section</a>
+  <a href="admission.html">Primary Section</a>
+  <a href="admission.html">Secondary Section</a>
+  <a href="admission.html">Extra Lesson / Special Classes</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">School Galleries</button>
+  <div class="dropdown-content">
+  <a href="groupm.html">Teachers</a>
+  <a href="nursery.html">Nursery Student</a>
+  <a href="islamiyya.html">Islamiyya Section</a>
+  <a href="primary.html">Primary Section</a>
+  <a href="Sec sch.html">Junior / Senior Classes</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Contact Us</button>
+  <div class="dropdown-content">
+  <a href="contactus.html">Contact</a>
+    <a href="form1.html">Add Events</a>
+  </div>
+
+</div>
+</div>
+    <marquee direcion="left"><b>WELCOME TO ZAYYAD ACADEMY - BRIGHTEST FUTURE FOR YOUR CHILD</b></marquee>
+
+	</body>
+
+  <style media="screen">
+  *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+@keyframes fade{
+from{
+  opacity:0.4;
+}
+to{
+  opacity:1;
+}
+}
+
+body{
+background: rgb(72, 190, 208);
+margin: 20px auto;
+}
+
+#slider{
+margin:0 auto;
+width:80%;
+height: 400px;
+overflow:hidden;
+padding: 10px;
+background: white;
+}
+
+.slides{
+overflow:hidden;
+animation-name:fade;
+animation-duration:2s;
+display:none;
+}
+
+img{
+width:100%;
+height: 350px;
+}
+
+#dot{
+margin:0 auto;
+text-align:center;
+}
+.dot{
+display:inline-block;
+border-radius:50%;
+background:#d3d3d3;
+padding:8px;
+margin:10px 5px;
+}
+
+.active{
+background:black;
+}
+
+@media (max-width:567px){
+#slider{
+  width:100%;
+}
+
+#heading{
+display:block;
+text-align:center;
+font-size:2em;
+margin:10px 0px;
+
+}
+  </style>
+
+   <div id="slider">
+  <div class="slides">
+    <img src="images (14).jpeg" width="100%" />
+   </div>
+
+    <div class="slides">
+    <img src="images (13).jpeg" width="100%" />
+  </div>
+
+    <div class="slides">
+    <img src="images (12).jpeg" width="100%" />
+  </div>
+
+     <div class="slides">
+    <img src="images (15).jpeg" width="100%" />
+  </div>
+
+  <div class="slides">
+    <img src="images (16).jpeg" width="100%" />
+  </div>
+
+    <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+   </div>
+
+<script type="text/javascript">
+var index = 0;
+var slides = document.querySelectorAll(".slides");
+var dot = document.querySelectorAll(".dot");
+
+function changeSlide(){
+
+  if(index<0){
+    index = slides.length-1;
+  }
+
+  if(index>slides.length-1){
+    index = 0;
+  }
+
+  for(let i=0;i<slides.length;i++){
+    slides[i].style.display = "none";
+    dot[i].classList.remove("active");
+  }
+
+  slides[index].style.display= "block";
+  dot[index].classList.add("active");
+
+  index++;
+
+  setTimeout(changeSlide,2000);
+
+}
+
+changeSlide();
+</script>
+
+<footer>
+  <div class="footer">
+
+    <style type="text/css">
+      
+      html body{
+        margin: 0;
+        padding: 0;
+      }
+
+      main{
+        flex: 1 0 auto;
+      }
+
+      footer{
+        color: #fff;
+        background: #333;
+        position: relative;
+        font-size: 100%;
+      }
+
+      .footer-copyright{
+        width: 100%;
+        height: 40px;
+        background: #111;
+        padding: 10px;
+        position: absolute;
+        left: 0px;
+      }
+
+      .footer-body {
+        margin-bottom: 40px;
+        padding: 30px;
+      }
+
+      .footer-body > div:first-child{
+        font-size: 50px;
+      }
+
+      .footer-body ul {
+        list-style-type: none;
+        margin:0px;
+        padding: 0px;
+        text-align: center;
+      }
+
+      .footer-body ul {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 7px;
+      }
+    </style>
+
+    <header></header>
+    <main></main>
+
+    <footer>
+      <div class="footer-body">
+        <div>Zayyad Academy, Kano</div>
+        <div>
+          <p>We're there every situation in order to solve all educational problems, from each level of education Insha Allah</p>
+          <ul>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> Terms & Conditions </a></li>
+            <li><a href="#"> Priavcy Policy </a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</footer>
+
+</body>
+</html>
+
